@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="300" viewBox="0 0 1600 300" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="10" x2="1550" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102B42"/>
+      <stop offset=".58" stop-color="#14243A"/>
+      <stop offset="1" stop-color="#241D36"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFF"/>
+      <stop offset="1" stop-color="#DCE9EE"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#07131F" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="300" rx="24" fill="url(#bg)"/>
+  <circle cx="1431" cy="148" r="108" fill="#0876D1" fill-opacity=".2"/>
+  <circle cx="1431" cy="148" r="77" stroke="#8FDAAE" stroke-opacity=".22"/>
+  <path d="M0 246C253 181 366 318 654 265S1051 193 1298 265 1519 287 1600 249V300H0v-54Z" fill="#0876D1" fill-opacity=".1"/>
+  <text x="64" y="56" fill="#9FDAAE" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" letter-spacing="3">ODEON PRINT  /  THE STUDIO SERIES</text>
+  <text x="64" y="137" fill="#FFF" font-family="Arial,Helvetica,sans-serif" font-size="50" font-weight="800" letter-spacing="0">MAKE YOUR BRAND</text>
+  <text x="64" y="202" fill="#FFF" font-family="Georgia,serif" font-size="54" font-style="italic">impossible to miss.</text>
+  <rect x="64" y="228" width="232" height="42" rx="21" fill="#ED174C"/>
+  <text x="86" y="255" fill="#FFF" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" letter-spacing="1">PRINT THAT WORKS</text>
+  <path d="M655 58v184" stroke="#FFF" stroke-opacity=".23" stroke-width="2"/>
+  <text x="700" y="104" fill="#FFF" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">Ideas, made tangible.</text>
+  <text x="700" y="141" fill="#CBD6E0" font-family="Arial,Helvetica,sans-serif" font-size="16">Business essentials, event details and bold displays.</text>
+  <text x="700" y="169" fill="#CBD6E0" font-family="Arial,Helvetica,sans-serif" font-size="16">One good print can change how people see your brand.</text>
+  <g filter="url(#shadow)">
+    <g transform="translate(1110 54) rotate(-12 76 100)">
+      <rect width="151" height="198" rx="5" fill="#078149"/>
+      <text x="16" y="26" fill="#D7F2E0" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" letter-spacing="1.5">ODEON / PRINT</text>
+      <text x="16" y="91" fill="#FFF" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800">MAKE</text>
+      <text x="16" y="121" fill="#FFF" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800">IT</text>
+      <text x="16" y="151" fill="#FFF" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800">MATTER.</text>
+      <rect x="16" y="169" width="40" height="3" rx="1.5" fill="#ED174C"/>
+    </g>
+    <g transform="translate(1276 73) rotate(9 73 97)">
+      <rect width="146" height="191" rx="5" fill="url(#card)"/>
+      <text x="15" y="25" fill="#526272" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" letter-spacing="1.4">BUSINESS CARD</text>
+      <text x="15" y="91" fill="#102B42" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="800">YOUR</text>
+      <text x="15" y="120" fill="#102B42" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="800">NAME</text>
+      <text x="15" y="149" fill="#0876D1" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" letter-spacing="1">MAKE A GOOD IMPRESSION</text>
+      <path d="M15 165h33" stroke="#ED174C" stroke-width="3"/>
+    </g>
+  </g>
+  <g transform="translate(1492 68)">
+    <circle cx="0" cy="0" r="26" fill="#ED174C"/>
+    <path d="m0-14 3.8 9.2L14-4l-7.5 6.8L8.7 13 0 8-8.7 13l2.2-10.2L-14-4l10.2-.8L0-14Z" fill="#FFF"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="18s" repeatCount="indefinite"/>
+  </g>
+  <circle cx="1044" cy="230" r="7" fill="#9FDAAE" fill-opacity=".85">
+    <animate attributeName="cy" values="230;218;230" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

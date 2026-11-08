@@ -1,0 +1,95 @@
+.product-detail-section{max-width:1220px;margin:0 auto;padding:10px 24px 48px}
+.product-breadcrumb{min-height:36px;display:flex;align-items:center;gap:11px;color:#7a8490;font-size:10px}
+.product-breadcrumb a:hover{color:#0876d1}
+.product-breadcrumb>span{color:#aab2ba}
+.product-breadcrumb strong{color:#333d48;font-weight:600}
+.product-detail-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(34px,8vw,112px);align-items:start;padding-top:12px}
+.product-gallery{min-width:0}
+.x-banner-preview{height:370px;position:relative;display:flex;align-items:center;justify-content:center;gap:7%;overflow:hidden;border:1px solid #e6e9ed;border-radius:16px;background:radial-gradient(ellipse at 50% 48%,#fafbfc 0,#fff 70%)}
+.product-sample-preview{height:370px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid #e6e9ed;border-radius:16px;background:radial-gradient(ellipse at 50% 45%,#eef5f2 0,#f8faf9 56%,#fff 100%)}
+.product-sample-preview:before{content:"";position:absolute;width:270px;height:270px;border:1px solid #0876d11c;border-radius:50%;box-shadow:0 0 0 25px #0876d108,0 0 0 52px #0876d105}
+.sample-sheet{position:absolute;width:43%;height:62%;display:flex;flex-direction:column;justify-content:space-between;padding:15px;box-shadow:0 18px 34px #102b4228}
+.sample-sheet small{font-size:7px;font-weight:800;letter-spacing:.13em}
+.sample-sheet b{font-size:clamp(16px,2.1vw,25px);line-height:.98}
+.sample-sheet i{font-size:6px;font-style:normal;font-weight:800;letter-spacing:.12em}
+.sample-sheet-back{top:14%;right:12%;background:#078149;color:#fff;transform:rotate(11deg)}
+.sample-sheet-mid{top:20%;left:13%;background:#ed174c;color:#fff;transform:rotate(-9deg)}
+.sample-sheet-mid b{font-size:clamp(14px,1.8vw,22px)}
+.sample-sheet-front{z-index:2;top:24%;left:31%;width:40%;height:62%;background:#fff;color:#102b42;transform:rotate(2deg)}
+.sample-sheet-front b{font-size:clamp(14px,1.7vw,20px)}
+.sample-sheet-front i{color:#0876d1}
+.sample-preview-stamp{position:absolute;z-index:3;right:9%;bottom:9%;width:66px;height:66px;display:grid;align-content:center;border-radius:50%;background:#102b42;color:#fff;text-align:center;font-size:8px;line-height:1.15;transform:rotate(9deg)}
+.sample-preview-stamp b{color:#9fe0bb}
+.preview-promotional-merchandise{background:radial-gradient(ellipse at 50% 45%,#f6efdb 0,#faf9f4 56%,#fff 100%)}
+.preview-apparel-branding{background:radial-gradient(ellipse at 50% 45%,#f3e8e8 0,#faf6f6 56%,#fff 100%)}
+.preview-events-occasions{background:radial-gradient(ellipse at 50% 45%,#e9f1f5 0,#f7f9fa 56%,#fff 100%)}
+.banner-stand{width:37%;height:90%;position:relative;align-self:flex-end}
+.banner-panel{position:absolute;z-index:2;top:3%;left:13%;width:74%;height:75%;display:flex;flex-direction:column;align-items:center;justify-content:center;clip-path:polygon(5% 0,100% 0,94% 100%,0 100%);box-shadow:0 6px 12px #1112}
+.banner-stand-red .banner-panel{background:#e81932;color:white}
+.banner-stand-white .banner-panel{background:#f0f2f3;color:#54606b;box-shadow:inset 0 0 0 1px #dce1e5,0 6px 12px #1112}
+.banner-panel>b{font-size:clamp(27px,3vw,42px);line-height:.85}
+.banner-panel>strong{margin-top:8px;font-size:clamp(21px,2.4vw,32px);line-height:.9;letter-spacing:.03em;text-align:center;writing-mode:vertical-rl;transform:rotate(180deg)}
+.banner-stand-white .banner-panel>b{font-size:23px;line-height:1.05;text-align:center}
+.banner-rod{position:absolute;z-index:1;bottom:2%;height:90%;width:2px;background:#59616a;transform-origin:bottom center}
+.banner-stand-red .banner-rod{background:#333b41}
+.banner-stand-white .banner-rod{background:#69737c}
+.rod-a{left:10%;transform:rotate(16deg)}
+.rod-b{right:11%;transform:rotate(-16deg)}
+.rod-c{left:50%;height:67%;transform:rotate(38deg);opacity:.85}
+.banner-foot{position:absolute;bottom:1%;left:29%;width:42%;height:3px;background:#303940;transform:rotate(-2deg)}
+.product-benefits{display:flex;align-items:center;gap:clamp(18px,5vw,55px);padding-top:14px}
+.product-benefits span{display:flex;align-items:center;gap:8px;color:#384550;font-size:10px}
+.product-benefits i{width:23px;height:23px;display:grid;place-items:center;border-radius:50%;background:#fff0f2;color:#ed174c;font-size:12px;font-style:normal;font-weight:800}
+.product-configurator{min-width:0;color:#242b33}
+.product-title-row{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.product-eyebrow{margin:0 0 5px;color:#0876d1;font-size:8px;font-weight:800;letter-spacing:.13em}
+.product-title-row h1{margin:0;color:#171c21;font-size:20px;line-height:1.2}
+.product-rating{color:#77818b;font-size:9px}
+.product-price{display:flex;align-items:baseline;gap:8px;margin:8px 0 19px}
+.product-price strong{font-size:18px;font-weight:750}
+.product-price span{color:#707984;font-size:10px}
+.config-label-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;color:#252c33;font-size:10px;font-weight:650}
+.config-label-row>span:last-child,.config-label-row>a{color:#78828b;font-size:9px;font-weight:400}
+.quantity-control{width:132px;height:35px;display:grid;grid-template-columns:35px 1fr 35px;overflow:hidden;border:1px solid #d5d9de;border-radius:8px}
+.quantity-control button{border:0;background:#fff;color:#252c33;font-size:19px;cursor:pointer}
+.quantity-control button:disabled{color:#bbc1c6;cursor:not-allowed}
+.quantity-control button:first-child{border-right:1px solid #e1e4e7}
+.quantity-control button:last-child{border-left:1px solid #e1e4e7}
+.quantity-control input{width:100%;min-width:0;border:0;outline:0;text-align:center;color:#252c33;font-size:11px;-moz-appearance:textfield}
+.quantity-control input::-webkit-inner-spin-button,.quantity-control input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.turnaround-label{margin-top:17px}
+.turnaround-label>a{text-decoration:none}
+.turnaround-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.turnaround-option{min-height:82px;position:relative;display:flex;flex-direction:column;gap:3px;padding:8px 9px;border:1px solid #dfe3e6;border-radius:9px;background:#fff;cursor:pointer}
+.turnaround-option.is-selected{border:2px solid #252b31;padding:7px 8px;background:#fafafa}
+.turnaround-option input{position:absolute;top:8px;right:8px;width:12px;height:12px;margin:0;accent-color:#222}
+.turnaround-pill{width:max-content;padding:3px 7px;border-radius:20px;background:#252b31;color:white;font-size:8px;font-weight:700}
+.turnaround-express .turnaround-pill{background:#fff0cc;color:#9a6400}
+.turnaround-standard .turnaround-pill{background:#e2f6e8;color:#168043}
+.turnaround-option strong{padding-left:18px;color:#282f35;font-size:10px}
+.turnaround-option small{padding-left:18px;color:#76808a;font-size:8px}
+.turnaround-option em{margin-top:auto;color:#727d87;font-size:7px;font-style:normal}
+.turnaround-rush strong:before,.turnaround-express strong:before,.turnaround-standard strong:before{position:absolute;left:9px;color:#7a858e}
+.turnaround-rush strong:before{content:"◷"}.turnaround-express strong:before{content:"◴";color:#e89b12}.turnaround-standard strong:before{content:"↗";color:#15a05a}
+.delivery-label{margin-top:17px}
+.product-select{height:36px;display:flex;align-items:center;gap:9px;margin-top:6px;padding:0 10px;border:1px solid #d5d9de;border-radius:8px;color:#6b7580}
+.product-select>span{flex:0 0 auto;color:#7a858e;font-size:13px}
+.product-select select,.product-select input{width:100%;min-width:0;height:100%;appearance:none;border:0;outline:0;background:transparent;color:#4a535d;font:400 10px Arial,Helvetica,sans-serif}
+.product-select select:invalid,.product-select input:placeholder-shown{color:#707984}
+.product-select>b{font-size:14px;font-weight:400}
+.artwork-label{margin-top:17px}
+.artwork-upload{min-height:48px;position:relative;display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px dashed #cbd1d7;border-radius:8px;cursor:pointer}
+.upload-symbol{width:23px;height:23px;display:grid;place-items:center;color:#65717c;font-size:20px}
+.artwork-upload>span:nth-child(2){min-width:0;display:flex;flex-direction:column;gap:3px}
+.artwork-upload strong{overflow:hidden;color:#343d46;font-size:10px;text-overflow:ellipsis;white-space:nowrap}
+.artwork-upload small{color:#7a848e;font-size:8px;line-height:1.4}
+.artwork-upload input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.product-order-row{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:13px}
+.product-order-row p{margin:0;color:#6d7781;font-size:9px}
+.product-order-row p strong{display:block;margin-top:3px;color:#1f272e;font-size:13px}
+.product-order-row>a{min-height:38px;display:flex;align-items:center;justify-content:center;gap:7px;padding:0 14px;border-radius:8px;background:#19bd67;color:white;font-size:10px;font-weight:700;white-space:nowrap}
+.product-order-row>a:hover{background:#109e55}
+.product-order-row>a span{font-size:15px}
+@media(max-width:850px){.product-detail-section{padding-inline:20px}.product-detail-grid{gap:28px}.x-banner-preview,.product-sample-preview{height:330px}.product-rating{display:none}}
+@media(max-width:650px){.product-detail-section{padding:10px 16px 34px}.product-detail-grid{grid-template-columns:1fr;gap:21px;padding-top:8px}.x-banner-preview,.product-sample-preview{height:min(82vw,370px);min-height:270px}.banner-stand{width:35%;height:88%}.product-benefits{justify-content:space-between;gap:10px}.product-configurator{padding-bottom:10px}.product-title-row h1{font-size:19px}.turnaround-option{min-height:79px;padding:7px}.turnaround-option.is-selected{padding:6px}.product-order-row{position:sticky;bottom:8px;z-index:3;padding:8px;background:#fffffff2;backdrop-filter:blur(8px);border:1px solid #e5e8eb;border-radius:9px}}
+@media(max-width:390px){.product-breadcrumb{gap:7px;font-size:9px}.product-detail-section{padding-inline:14px}.x-banner-preview,.product-sample-preview{min-height:245px}.turnaround-options{gap:5px}.turnaround-option{padding:6px}.turnaround-option.is-selected{padding:5px}.turnaround-option strong,.turnaround-option small{padding-left:14px}.turnaround-rush strong:before,.turnaround-express strong:before,.turnaround-standard strong:before{left:6px}.product-order-row>a{padding-inline:10px;font-size:9px}}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="156" viewBox="0 0 336 156" fill="none">
+  <rect x="15" y="15" width="84" height="124" stroke="#183255" stroke-width="2"/>
+  <path d="M28 42 57 25v34L28 42Z" fill="#00A9E8"/>
+  <path d="M61 42 90 25v34L61 42Z" fill="#00A9E8"/>
+  <path d="M28 76 57 59v34L28 76Z" fill="#EC008C"/>
+  <path d="M61 76 90 59v34L61 76Z" fill="#EC008C"/>
+  <path d="M28 110 57 93v34L28 110Z" fill="#FFD900"/>
+  <path d="M61 110 90 93v34L61 110Z" fill="#FFD900"/>
+  <path d="M28 127 57 110v17H28Z" fill="#183255"/>
+  <path d="M61 127 90 110v17H61Z" fill="#183255"/>
+  <text x="134" y="54" fill="#080808" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="800" letter-spacing="-1.6">ODEON</text>
+  <text x="134" y="98" fill="#00A9E8" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="800" letter-spacing="-.7">Print Hub</text>
+  <text x="135" y="128" fill="#183255" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="400" letter-spacing="9">SHOP</text>
+</svg>
