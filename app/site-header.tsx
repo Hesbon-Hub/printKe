@@ -4,6 +4,7 @@ import { useState } from "react";
 import { categories } from "@/lib/catalogue";
 import { productMenus, productPath, startingPrices } from "@/lib/products";
 import Image from "next/image";
+import { useCart } from "./cart-provider";
 
 const whatsapp = "https://wa.me/254795341458?text=Hello%20Odeon%20Print%2C%20I%27d%20like%20to%20make%20a%20printing%20enquiry.";
 
@@ -25,6 +26,7 @@ function Icon({ name }: { name: "phone" | "mail" | "search" | "user" | "heart" |
 
 export default function SiteHeader() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const { itemCount, isLoaded } = useCart();
   const activeMenuData = productMenus.find((menu) => menu.label === activeMenu);
 
   return <>
@@ -38,7 +40,7 @@ export default function SiteHeader() {
       <div className="store-main-row">
         <a className="brand" href="/" aria-label="Odeon Print Hub Shop home"><Image className="brand-logo" src="/odeon-print-hub.svg" alt="Odeon Print Hub Shop" width={168} height={78}/></a>
         <form className="store-search" action="/catalogue/corporate-identity" role="search"><label className="visually-hidden" htmlFor="store-search">Search products</label><input id="store-search" name="q" type="search" placeholder="Search business cards, banners, stickers, books..."/><button type="submit" aria-label="Search"><Icon name="search"/></button></form>
-        <div className="store-actions"><a href="/login"><Icon name="user"/><span>Sign in</span></a><a href="/login"><Icon name="heart"/><span>Account</span></a><a href="/#categories"><Icon name="bag"/><span>Cart</span></a></div>
+        <div className="store-actions"><a href="/login"><Icon name="user"/><span>Sign in</span></a><a href="/login"><Icon name="heart"/><span>Account</span></a><a href="/cart" aria-label={`Cart${isLoaded ? `, ${itemCount} items` : ""}`}><Icon name="bag"/><span>Cart{isLoaded && itemCount > 0 ? <small className="cart-count">{itemCount}</small> : null}</span></a></div>
       </div>
       <nav className="store-nav" aria-label="Product navigation" onMouseLeave={() => setActiveMenu(null)}>
         <details className="all-products"><summary><Icon name="grid"/>All Products<Icon name="chevron"/></summary><div className="products-menu">{categories.map((category) => <a href={category.href} key={category.number}>{category.name}</a>)}</div></details>

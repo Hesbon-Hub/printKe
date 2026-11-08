@@ -7,7 +7,9 @@ import "./browse.css";
 import "./category-discovery.css";
 import "./campaign-social.css";
 import "./login.css";
+import "./cart.css";
 import SiteHeader from "./site-header";
+import { CartProvider } from "./cart-provider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shop.odeondigital.co.ke"),
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body><SiteHeader />{children}</body>
+      <body><CartProvider><SiteHeader />{children}</CartProvider></body>
     </html>
   );
 }
