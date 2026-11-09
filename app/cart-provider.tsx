@@ -27,6 +27,7 @@ type CartContextValue = {
 };
 
 const CART_STORAGE_KEY = "odeon-print-cart-v1";
+const MAX_CART_QUANTITY = 9999;
 const CartContext = createContext<CartContextValue | null>(null);
 
 export function CartProvider({ children }: { children: ReactNode }) {
@@ -61,11 +62,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
       const id = `${item.productSlug}:${item.option || "default"}`;
       setItems((current) => {
         const existing = current.find((cartItem) => cartItem.id === id);
-        if (!existing) return [...current, { ...item, id, quantity: Math.min(20, item.quantity) }];
-        return current.map((cartItem) => cartItem.id === id ? { ...cartItem, quantity: Math.min(20, cartItem.quantity + item.quantity) } : cartItem);
+        if (!existing) return [...current, { ...item, id, quantity: Math.min(MAX_CART_QUANTITY, item.quantity) }];
+        return current.map((cartItem) => cartItem.id === id ? { ...cartItem, quantity: Math.min(MAX_CART_QUANTITY, cartItem.quantity + item.quantity) } : cartItem);
       });
     },
-    setQuantity: (id, quantity) => setItems((current) => current.map((item) => item.id === id ? { ...item, quantity: Math.min(20, Math.max(1, quantity)) } : item)),
+    setQuantity: (id, quantity) => setItems((current) => current.map((item) => item.id === id ? { ...item, quantity: Math.min(MAX_CART_QUANTITY, Math.max(1, quantity)) } : item)),
     removeItem: (id) => setItems((current) => current.filter((item) => item.id !== id)),
     clearCart: () => setItems([]),
   }), [items, isLoaded]);
